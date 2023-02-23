@@ -78,27 +78,27 @@ public class AppTest {
     @Test
     public void calcular_Y_dado_T() {
         // Valores negativos de t deben lanzar una excepción
-        // - Ejercicio: App.calcular_Y_dado_T(0, 0, 0, -9.8, -1);
+        // - Ejercicio: App.calcular_Y_dado_T(0, 0, 0, -9.81, -1);
         
         // Valores del angulo que no estén entre 0 y PI/2 deben lanzar una excepción
-        // - Ejercicio: App.calcular_Y_dado_T(0, 0, Math.PI,-9.8, 0);
+        // - Ejercicio: App.calcular_Y_dado_T(0, 0, Math.PI,-9.81, 0);
         
         // Valor de t igual a 0, debe devolver el mismo valor que x_ini;
         // hacemos un par de comprobaciones
-        // - Ejercicio: assertEquals(10, App.calcular_Y_dado_T(10, 29, 0, -9.8, 0), 0);
-        // - Ejercicio: assertEquals(4, App.calcular_Y_dado_T(4, 12, 0, -9.8, 0), 0);
+        // - Ejercicio: assertEquals(10, App.calcular_Y_dado_T(10, 29, 0, -9.81, 0), 0);
+        // - Ejercicio: assertEquals(4, App.calcular_Y_dado_T(4, 12, 0, -9.81, 0), 0);
 
 
         // Según https://www.areaciencias.com/fisica/tiro-parabolico-formulas/
 
         // Para una velocidad de 26m/s, un ángulo de 40º, y 3.41/2 segundos, Y debe
         // devolver 14.23m
-        // - Ejercicio: assertEquals(14.23, App.calcular_Y_dado_T(0, 26, Math.toRadians(40), -9.8, 3.41/2), 0.1);
+        // - Ejercicio: assertEquals(14.23, App.calcular_Y_dado_T(0, 26, Math.toRadians(40), -9.81, 3.41/2), 0.1);
 
         // Si en vez de partir desde Y=0, damos otro valor, debe incrementarse en dicho
         // valor
-        // - Ejercicio: assertEquals(14.23+10, App.calcular_Y_dado_T(0+10, 26, Math.toRadians(40), -9.8, 3.41/2), 0.1);
-        // - Ejercicio: assertEquals(14.23-10, App.calcular_Y_dado_T(0-10, 26, Math.toRadians(40), -9.8, 3.41/2), 0.1);
+        // - Ejercicio: assertEquals(14.23+10, App.calcular_Y_dado_T(0+10, 26, Math.toRadians(40), -9.81, 3.41/2), 0.1);
+        // - Ejercicio: assertEquals(14.23-10, App.calcular_Y_dado_T(0-10, 26, Math.toRadians(40), -9.81, 3.41/2), 0.1);
     }
 
     @Test
@@ -124,7 +124,7 @@ public class AppTest {
         // Según https://www.areaciencias.com/fisica/tiro-parabolico-formulas/
 
         // Para una velocidad de 26m/s, un ángulo de 40º, y x igual a 67.73/2, Y debe devolver 14.23m. 
-        // - Ejercicio: Por tanto valores mayores o iguales que 14.23 deben devolver true y valores fuera de ese rango deben devolver false.
+        // - Ejercicio: Por tanto valores mayores que 14.235772321882246 (prueba con 14.24 o mayores) deben devolver true y valores fuera de ese rango deben devolver false.
         // Hacemos al menos dos comprobaciones para true y otras dos para false.
     }
 }
