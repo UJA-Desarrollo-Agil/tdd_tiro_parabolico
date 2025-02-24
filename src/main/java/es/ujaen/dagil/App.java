@@ -118,8 +118,13 @@ public class App {
      * @return Devuelve true si el valor de Y (=altura) que se obtiene para el valor  posicion_x_muro está entre 0 y la altura del muro. 
      */
 
-    public static boolean impacta_en_muro(final double x_ini, final double y_ini, final double v_ini, final double angulo, final double g,
-            final double posicion_x_muro, final double altura_muro) {
+     public static boolean impacta_en_muro(final double x_ini,
+             final double y_ini,
+             final double v_ini,
+             final double angulo,
+            final double g,
+             final double posicion_x_muro,
+             final double altura_muro) {
         return (boolean) false;
     }
 
