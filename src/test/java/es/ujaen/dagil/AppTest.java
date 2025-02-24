@@ -33,12 +33,14 @@ public class AppTest {
         }
         // Valor de t igual a 0, debe devolver el mismo valor que x_ini
         // hacemos un par de comprobaciones
-        assertEquals(10, App.calcular_X_dado_T(10, 29, 0, 0), 0);
+        assertEquals(-10, App.calcular_X_dado_T(-10, 29, 0, 0), 0);
+        assertEquals(0, App.calcular_X_dado_T(0, 12, 0, 0), 0);
         assertEquals(4, App.calcular_X_dado_T(4, 12, 0, 0), 0);
 
         // Valor de velocidad negativa, debe devolver un valor x menor que x_ini
-        assertTrue(20 > App.calcular_X_dado_T(20, -12, 0, 5));
+        assertTrue(-20 > App.calcular_X_dado_T(-20, -12, 0, 5));
         assertTrue(0 > App.calcular_X_dado_T(0, -10, 0, 4));
+        assertTrue(30 > App.calcular_X_dado_T(30, -10, 0, 4));
 
         // Según https://www.areaciencias.com/fisica/tiro-parabolico-formulas/
 
