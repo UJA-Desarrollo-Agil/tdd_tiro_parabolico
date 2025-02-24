@@ -9,6 +9,7 @@ import java.util.Scanner;
  *
  */
 public class App {
+    public static double VALOR_ABSURDO = 150000;
     /**
      * Calcula el desplazamiento en el eje X durante un tiempo t.
      * Consideramos el rozamiento nulo.
@@ -55,7 +56,7 @@ public class App {
 
     public static double calcular_T_dado_X(final double x_ini, final double v_ini, final double angulo,
             final double x_fin) {
-            return (double) 0;
+            return (double) VALOR_ABSURDO;
     }
 
     /**
@@ -77,7 +78,7 @@ public class App {
 
     public static double calcular_Y_dado_T(final double y_ini, final double v_ini, final double angulo, final double g,
             final double t) {
-       return (double) 0;
+       return (double) VALOR_ABSURDO;
     }
     /**
      * Calcula el valor que tendra Y para un determinado valor de X
@@ -98,7 +99,7 @@ public class App {
 
     public static double calcular_Y_dado_X(final double x_ini, final double y_ini, final double v_ini, final double angulo, final double g,
             final double x_fin) {
-        return (double) 0;
+        return (double) VALOR_ABSURDO;
     }
 
      /**
@@ -152,7 +153,8 @@ public class App {
 
         boolean impacta = impacta_en_muro(0,0, v_ini, angulo, -9.8, posicion_x_muro, altura);
 
-        System.out.println((impacta?"Sí":"No")+" impacta en el muro");
+        System.out.println((impacta ? "Sí" : "No") + " impacta en el muro");
+        myObj.close();
     }
 
 
