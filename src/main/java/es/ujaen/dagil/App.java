@@ -73,6 +73,7 @@ public class App {
      * @post Si angulo<0 o angulo>pi/2, lanza una excepción de tipo ArithmeticException
      * 
      * @return Altura (=desplazamiento en eje Y) calculada como:  y_ini + v_0y * t + (1 / 2.0) * g * t * t
+     *                                                            Importante: v_0y=v_ini.Math.sin(angulo)
      * 
      */
 
