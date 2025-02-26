@@ -85,7 +85,7 @@ public class AppTest {
         // Valores del angulo que no estén entre 0 y PI/2 deben lanzar una excepción
         // - Ejercicio: App.calcular_Y_dado_T(0, 0, Math.PI,-9.81, 0);
         
-        // Valor de t igual a 0, debe devolver el mismo valor que x_ini;
+        // Valor de t igual a 0, debe devolver el mismo valor que y_ini;
         // hacemos un par de comprobaciones
         // - Ejercicio: assertEquals(10, App.calcular_Y_dado_T(10, 29, 0, -9.81, 0), 0);
         // - Ejercicio: assertEquals(4, App.calcular_Y_dado_T(4, 12, 0, -9.81, 0), 0);
